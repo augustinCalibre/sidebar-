@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2');
+body{
+    font-familly: 'Roboto' ,sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+}
+
+
+.sideBar{
+    position:fixed;
+    left:-250px;
+    width: 250px;
+    height: 100%;
+    background:#042331;
+    transition:all.5s;
+}
+
+
+.sideBar header{
+
+    font-size: 22px;
+    color:white;
+    text-align:center;
+    line-height: 70px;
+    background:#085f88;
+    user-select:none;
+}
+.sideBar ul a{
+
+    display:block;
+    height:100%;
+    width:100%;
+    line-height: 70px;
+    font-size:20px;
+    color:white;
+    box-sizing: border-box;
+    padding-left: 40px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .3s;
+}
+
+
+ul li:hover a{
+    padding-left: 70px;
+}
+
+.sideBar ul a i{
+
+    margin-right: 20px;
+}
+
+
+#check{
+    display:none;
+}
+#check:checked ~  .sideBar{
+    left:0;
+}
+#check:checked ~  label #btn{
+    left:25px;
+    opacity:0;
+    pointer-events:none;
+    
+}
+
+#check:checked ~  label #cancel{
+    left:195px;
+    
+    
+
+
+}
+
+label #btn,label #cancel{
+    position:absolute;
+    cursor:pointer;
+    background:#054563;
+    border-radius:3px;
+}
+label #btn{
+    left:40px;
+    top:25px;
+    font-size: 35px;
+    color:white;
+    padding:6px 12px;
+    transition:all.7s,
+    
+}
+label #cancel{
+    left:-195px;
+    top:17px;
+    font-size: 20px;
+    padding:6px 12px;
+    z-index: 11111;
+    transition:all.7s;
+    
+}
+
+section{
+    background:url(2.jpg) no-repeat;
+    background-position: center;
+    background-size:cover;
+    height:100vh;
+}
+
+
